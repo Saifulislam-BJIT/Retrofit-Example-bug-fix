@@ -29,7 +29,7 @@ class OverviewViewModel : ViewModel() {
         if (OverviewFragment.haveInternet) {
             getMarsPhotos()
         } else {
-            _status.value = MarsApiStatus.LOADING
+            _status.value = MarsApiStatus.ERROR
             _photos.value = listOf()
         }
     }
